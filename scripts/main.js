@@ -17,14 +17,14 @@ function estableceNombreUsuario() {
     }
     else{
     localStorage.setItem('nombre', miNombre);
-    miTitulo.textContent = 'Navegar es genial, ' + miNombre;}
+    miTitulo.innerHTML = 'Navegar es genial, ' + miNombre;}
 }
 if (!localStorage.getItem('nombre')) {
     estableceNombreUsuario();
 }
 else {
     let nombreAlmacenado = localStorage.getItem('nombre');
-    miTitulo.textContent = 'Google es genial, ' + nombreAlmacenado;
+    miTitulo.innerHTML = 'Google es genial, ' + nombreAlmacenado;
 }
 
 
