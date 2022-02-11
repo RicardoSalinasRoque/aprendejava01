@@ -1,10 +1,10 @@
 let miImagen = document.querySelector('img');
-miImage.onclick = function () {
+miImagen.onclick = function () {
     let miSrc = miImagen.getAttribute('src');
     if (miSrc === 'images/chrome3.png') {
-      miImage.setAttribute('src','images/firefox-icon.png');
+      miImagen.setAttribute('src','images/firefox-icon.png');
     } else {
-      miImage.setAttribute('src', 'images/chrome3.png');
+      miImagen.setAttribute('src', 'images/chrome3.png');
     }
 }
 let miBoton = document.querySelector('button');
